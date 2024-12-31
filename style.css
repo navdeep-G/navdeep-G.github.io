@@ -1,70 +1,21 @@
-/* General Reset */
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
+/* Align the button better with the text */
+.contact-button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
 }
 
-body {
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Header Section */
-header {
-    background: #007acc;
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.tagline {
-    font-size: 1.2em;
-    margin: 10px 0 0;
-}
-
-/* Section Styling */
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 40px 0;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2em;
-    color: #007acc;
-}
-
-p {
-    font-size: 1em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Contact Section */
 .contact-button {
-    display: inline-block;
     padding: 10px 20px;
-    color: #fff;
-    background: #007acc;
+    background-color: #007bff;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 .contact-button:hover {
-    background: #005f99;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 0.9em;
+    background-color: #0056b3;
 }
 
