@@ -1,3 +1,62 @@
+/* Header Container */
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+/* Email and CV Button Side by Side */
+.email-cv-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+.email-cv-container p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* CV Button Styling */
+.cv-button {
+    background: #ffffff; /* White background */
+    color: #333333; /* Dark text color */
+    border: 1px solid #cccccc; /* Light border */
+    padding: 4px 8px; /* Smaller padding */
+    font-size: 12px; /* Smaller font size */
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cv-button:hover {
+    background: #f5f5f5; /* Slightly darker white */
+    border: 1px solid #b3b3b3; /* Slightly darker border */
+}
+
+
+
+
 /* Align the button better with the text */
 .contact-button-container {
     display: flex;
