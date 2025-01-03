@@ -1,3 +1,52 @@
+/* Flexbox layout for the row of videos */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create a grid with auto-adjusting columns */
+    gap: 20px; /* Space between each video */
+    margin-bottom: 20px;
+}
+
+/* Styling for each individual video */
+.video {
+    text-align: center;
+}
+
+/* Make the video screenshots responsive */
+.video-screenshot {
+    width: 100%; /* Ensure it takes full width of the container */
+    max-width: 250px; /* Set a maximum width for the image (adjust as needed) */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.video-screenshot:hover {
+    transform: scale(1.05); /* Slight zoom on hover for better interactivity */
+}
+
+/* Optional: Add some styling for video text */
+.video p {
+    font-weight: bold;
+    margin-top: 8px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    /* Adjust grid layout on smaller screens */
+    .video-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Two columns on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    /* One column on very small screens */
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 /* Header Container */
 .header-container {
     display: flex;
